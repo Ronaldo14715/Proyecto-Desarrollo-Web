@@ -1,4 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@font-face {
+    font-family: "bricolage";
+    src: url(../fonts/bricolageOne.ttf);
+}
+/* font-family: "Dela Gothic One" */
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+body{
+    background-color: #272727;
+}
+.main-header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 1.5rem;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* #111111 */
+}
+.img-icon{
+    display: flex;
+    align-items: center;
+}
+.div-icon .img-icon{
+    width: 2rem;
+}
+.main-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.main-nav > ul{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    list-style-type: none;
+    
+}
+.main-nav > ul > li > a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 0.8rem;
+    display: flex;
+    padding: 0;
+    height: 100%;
+    font-family: "Dela Gothic One";
+}
+.main-nav > ul > li > a:hover{
+    color: #FF8400;
+    height: 100%;
+}
+.section-nuevo{
+    display: flex;
+    justify-content: center;
+}
+.section-nuevo .nuevo-imagen{
+    width: 100%;
+}
+
+
+
