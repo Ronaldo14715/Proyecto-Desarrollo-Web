@@ -64,22 +64,70 @@ body{
 }
 
 /* FORMULARIO */
-.main-account{
+.section-main-forms{
     display: flex;
     justify-content: space-between;
     padding: 5rem;
+    gap: 3rem;
 }
-.section-logIn .logIn, .section-signIn .signIn {
+.title-signIn h2, .title-logIn h2{
     font-family: "bricolage";
+    color: #FF8400;
+    font-weight: bold;
+    text-decoration: double;
+    font-size: 2rem;
 }
 .section-signIn{
     width: 80rem;
+    background-color: #242222;
+    border: 0.1rem solid #FF8400;
+    border-radius: 0.5rem;
+    padding: 2rem;
 }
 .section-logIn{
     width: 40rem;
+    background-color: #242222;
+    border: 0.1rem solid #FF8400;
+    border-radius: 0.5rem;
+    padding: 2rem;
 }
-.section-signIn .signIn input, .section-logIn .logIn input{
-    color: black; 
+.form-logIn, .form-signIn{
+    width: 100%; 
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
 }
-
-
+.form-signIn input, .form-logIn input, .form-logIn label, .form-signIn label {
+    color: #ffffff; 
+    font-family: "Dela Gothic One";
+    display: block; 
+    width: 100%; 
+    margin-bottom: 1rem; 
+}
+.title-signIn, .title-logIn {
+    margin: 2rem 0;
+    text-align: center;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.form-group input[type="button"] {
+    margin: 0 auto;
+    color: #FFFFFF; 
+    font-size: 1rem;
+    background-color: #FF8400;
+    border: none;
+    width: 10rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-family: "bricolage";
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.form-group input[type="button"]:hover {
+    background-color: #E67300; 
+    color: #FFFFFF; 
+    transform: scale(1.05);
+}

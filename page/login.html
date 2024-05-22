@@ -12,7 +12,7 @@
 <body>
     <header class="main-header">
         <div class="div-icon">
-            <img class="img-icon" src="../img/crunchyrollIcon.png" alt="logo">
+            <a href="../index.html"><img class="img-icon" src="../img/crunchyrollIcon.png" alt="logo"></a>
         </div>
         <nav class="main-nav">
             <ul>
@@ -24,42 +24,53 @@
         </nav>
     </header>
     <main class="main-account">
-        <section class="section-signIn">
-            <h2>CREAR CUENTA</h2>
-            <form action="#" class="signIn">
-                <div>
-                    <label for="email">EMAIL:</label>
-                    <input type="email" name="emailSignIn" required> 
+        <section class="section-main-forms">
+            <div class="section-signIn">
+                <div class="title-signIn">
+                    <h2>CREAR CUENTA</h2>    
                 </div>
-                <div>
-                    <label for="usuario">USUARIO:</label>
-                    <input type="text" name="usuarioSignIn" required> 
+                <div class="form-signIn">
+                    <form action="#" class="signIn">
+                        <div class="form-group">
+                            <label for="emailSignIn">EMAIL:</label>
+                            <input type="email" id="emailSignIn" name="emailSignIn" required> 
+                        </div>
+                        <div class="form-group">
+                            <label for="usuarioSignIn">USUARIO:</label>
+                            <input type="text" id="usuarioSignIn" name="usuarioSignIn" required> 
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordSignIn">CONTRASEÑA:</label>
+                            <input type="password" id="passwordSignIn" name="passwordSignIn" required> 
+                        </div>
+                        <div class="form-group">
+                            <input type="button" required value="CREAR CUENTA"> 
+                        </div>
+                    </form>
                 </div>
-                <div>
-                    <label for="password">CONTRASEÑA:</label>
-                    <input type="password" name="passwordSignIn" required> 
+            </div>
+            <div class="section-logIn">
+                <div class="title-logIn">
+                    <h2>ACCEDER</h2>
                 </div>
-                <div>
-                    <input type="submit" required value="CREAR CUENTA"> 
+                <div class="form-logIn">
+                    <form action="#" class="logIn">
+                        <div class="form-group">
+                            <label for="emailLogIn">EMAIL:</label>
+                            <input type="email" id="emailLogIn" name="emailLogIn" required> 
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordLogIn">CONTRASEÑA:</label>
+                            <input type="password" id="passwordLogIn" name="passwordLogIn" required> 
+                        </div>
+                        <div class="form-group">
+                            <input type="button" required value="ACCEDER"> 
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </section>
-        <section class="section-logIn">
-            <h2>ACCEDER</h2>
-            <form action="#" class="logIn">
-                <div>
-                    <label for="email">EMAIL:</label>
-                    <input type="email" name="emailLogIn" required> 
-                </div>
-                <div>
-                    <label for="password">CONTRASEÑA:</label>
-                    <input type="password" name="passwordLogIn" required> 
-                </div>
-                <div>
-                    <input type="submit" required value="ACCEDER"> 
-                </div>
-            </form>
-        </section>
+
     </main>
     <footer>
 
