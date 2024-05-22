@@ -23,13 +23,42 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <article>
+    <main class="main-account">
+        <section class="section-signIn">
+            <h2>CREAR CUENTA</h2>
+            <form action="#" class="signIn">
                 <div>
-                    
+                    <label for="email">EMAIL:</label>
+                    <input type="email" name="emailSignIn" required> 
                 </div>
-            </article>
+                <div>
+                    <label for="usuario">USUARIO:</label>
+                    <input type="text" name="usuarioSignIn" required> 
+                </div>
+                <div>
+                    <label for="password">CONTRASEÑA:</label>
+                    <input type="password" name="passwordSignIn" required> 
+                </div>
+                <div>
+                    <input type="submit" required value="CREAR CUENTA"> 
+                </div>
+            </form>
+        </section>
+        <section class="section-logIn">
+            <h2>ACCEDER</h2>
+            <form action="#" class="logIn">
+                <div>
+                    <label for="email">EMAIL:</label>
+                    <input type="email" name="emailLogIn" required> 
+                </div>
+                <div>
+                    <label for="password">CONTRASEÑA:</label>
+                    <input type="password" name="passwordLogIn" required> 
+                </div>
+                <div>
+                    <input type="submit" required value="ACCEDER"> 
+                </div>
+            </form>
         </section>
     </main>
     <footer>

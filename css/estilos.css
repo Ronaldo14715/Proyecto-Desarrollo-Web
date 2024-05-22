@@ -8,6 +8,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: wheat;
 }
 body{
     background-color: #272727;
@@ -44,7 +45,6 @@ body{
 }
 .main-nav > ul > li > a{
     text-decoration: none;
-    color: wheat;
     font-size: 0.8rem;
     display: flex;
     padding: 0;
@@ -63,5 +63,23 @@ body{
     width: 100%;
 }
 
+/* FORMULARIO */
+.main-account{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+}
+.section-logIn .logIn, .section-signIn .signIn {
+    font-family: "bricolage";
+}
+.section-signIn{
+    width: 80rem;
+}
+.section-logIn{
+    width: 40rem;
+}
+.section-signIn .signIn input, .section-logIn .logIn input{
+    color: black; 
+}
 
 
