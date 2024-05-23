@@ -36,14 +36,14 @@ body{
     display: flex;
     justify-content: flex-end;
 }
-.main-nav > ul{
+.main-nav ul{
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     list-style-type: none;
     
 }
-.main-nav > ul > li > a{
+.main-nav ul li a{
     text-decoration: none;
     font-size: 0.8rem;
     display: flex;
@@ -51,7 +51,7 @@ body{
     height: 100%;
     font-family: "Dela Gothic One";
 }
-.main-nav > ul > li > a:hover{
+.main-nav ul li a:hover{
     color: #FF8400;
     height: 100%;
 }
@@ -92,17 +92,24 @@ body{
     padding: 2rem;
 }
 .form-logIn, .form-signIn{
-    width: 100%; 
     padding: 2rem;
     display: flex;
     justify-content: center;
 }
-.form-signIn input, .form-logIn input, .form-logIn label, .form-signIn label {
-    color: #ffffff; 
+.form-logIn label, .form-signIn label {
+    color: #FFFFFF;
     font-family: "Dela Gothic One";
     display: block; 
     width: 100%; 
     margin-bottom: 1rem; 
+}
+.form-signIn input, .form-logIn input{
+    color: #111111; 
+    font-family: "Dela Gothic One";
+    display: block; 
+    width: 100%; 
+    margin-bottom: 1rem; 
+    font-size: 1rem;
 }
 .title-signIn, .title-logIn {
     margin: 2rem 0;
@@ -112,6 +119,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    width: 25rem;
 }
 .form-group input[type="button"] {
     margin: 0 auto;
