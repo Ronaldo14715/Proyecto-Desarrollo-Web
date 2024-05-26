@@ -62,6 +62,41 @@ body{
 .section-new .new-imagen{
     width: 100%;
 }
+.section-popular{
+    padding: 2rem;
+}
+.section-popular-title{
+    margin: 1rem;
+}
+.section-popular-title h2{
+    font-family: "Dela Gothic One";
+}
+.section-popular-cards{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-popular-cards .card-img{
+    width: 60%;
+}
+.section-popular-cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-title{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.card .card-title p{
+    margin-top: 0.5rem;
+    align-items: left;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: bold;
+}
 
 /* FORMULARIO */
 .section-main-forms{
@@ -145,7 +180,6 @@ body{
 /* FOOOTER */
 
 .main-footer{
-    margin-top: 5rem;
     padding: 1rem;
     background-color: #111111;
 }
