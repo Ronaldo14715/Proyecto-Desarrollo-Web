@@ -23,7 +23,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* #111111 */
+    z-index: 1;
 }
 .img-icon{
     display: flex;
@@ -62,41 +62,68 @@ body{
 .section-new .new-imagen{
     width: 100%;
 }
+
+/*SECCION DE ANIMES POPULARES */
+
 .section-popular{
     padding: 2rem;
 }
 .section-popular-title{
     margin: 1rem;
-}
-.section-popular-title h2{
     font-family: "Dela Gothic One";
 }
-.section-popular-cards{
-    display: flex;
-    gap: 3rem;
-    flex-wrap: wrap;
-    justify-content: center;
+.card{
+    background-color: #111111;
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 100%;
 }
-.section-popular-cards .card-img{
-    width: 60%;
+.card:hover {
+    z-index: 0;
+    transform: scale(1.05);
 }
-.section-popular-cards .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.card-img {
+    width: 100%;
+    height: auto;
 }
-.card-title{
-    width: 60%;
+.card-title {
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
-.card .card-title p{
+.card-title p {
     margin-top: 0.5rem;
     align-items: left;
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
+
+@media (width > 300px){
+    .section-popular-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+}
+@media (width > 600px){
+    .section-popular-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+}
+@media (width > 990px){
+    .section-popular-cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+}
+
 
 /* FORMULARIO */
 .section-main-forms{
@@ -176,7 +203,6 @@ body{
     color: #FFFFFF; 
     transform: scale(1.05);
 }
-
 /* FOOOTER */
 
 .main-footer{
