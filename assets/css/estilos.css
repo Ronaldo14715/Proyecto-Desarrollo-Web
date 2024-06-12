@@ -74,9 +74,8 @@ body{
 }
 .card{
     background-color: #111111;
-    overflow: hidden;
     transition: transform 0.3s;
-    width: 100%;
+    width: 70%;
 }
 .card:hover {
     z-index: 0;
@@ -86,20 +85,25 @@ body{
     width: 100%;
     height: auto;
 }
+.card-title{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    place-items: center center;
+}
 .card-title {
     padding: 10px;
-    display: flex;
-    justify-content: space-between;
 }
 .card-title p {
-    margin-top: 0.5rem;
-    align-items: left;
     font-family: monospace;
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     font-weight: bold;
 }
 
-@media (width > 300px){
+.section-popular-cards{
+    place-items: center center;
+}
+@media (min-width: 300px) and (max-width: 500px){
     .section-popular-cards{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -107,21 +111,28 @@ body{
         gap: 2rem;
     }
 }
-@media (width > 600px){
+@media (min-width: 501px) and (max-width: 989px){
     .section-popular-cards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         gap: 2rem;
     }
+    .card-title p{
+        font-size: 0.8rem;
+    }
 }
-@media (width > 990px){
+@media (min-width: 990px) and (max-width: 1920px){
     .section-popular-cards{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         gap: 2rem;
     }
+    .card-title p{
+        font-size: 0.8rem;
+    }
+    
 }
 
 
@@ -229,4 +240,14 @@ body{
 .container-footer-name p{
     font-family: "bricolage";
     font-size: 1rem;
+}
+
+@media (min-width: 300px) and (max-width: 500px){
+
+}
+@media (min-width: 501px) and (max-width: 989px){
+    
+}
+@media (min-width: 990px) and (max-width: 1920px){
+    
 }
