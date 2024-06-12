@@ -220,22 +220,19 @@ body{
     padding: 1rem;
     background-color: #111111;
 }
-.container-footer{
-    display: flex;
-    gap: 1rem;
-    font-size: 2rem;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .container-footer-links{
-    display: flex;
     gap: 1.2rem;
 }
 .container-footer-links a {
     text-decoration: none;
 }
-.container-footer-links a i:hover{
+.container-footer-links a {
+    transition: all 1s ease;
+}
+.container-footer-links a:hover,i:hover{
     color:#E67300;
+    transform: scale(1.5);
 }
 .container-footer-name p{
     font-family: "bricolage";
@@ -243,11 +240,57 @@ body{
 }
 
 @media (min-width: 300px) and (max-width: 500px){
-
+    .container-footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 2;
+        gap: 1rem;
+        font-size: 2rem;
+        align-items: center;
+    }
+    .container-footer-links{
+        display: flex;
+        justify-content: center;
+    }
+    .container-footer-name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media (min-width: 501px) and (max-width: 989px){
-    
+    .container-footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        font-size: 2rem;
+        align-items: center;
+    }
+    .container-footer-links{
+        display: flex;
+        justify-content: start;
+    }
+    .container-footer-name{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
 }
 @media (min-width: 990px) and (max-width: 1920px){
-    
+    .container-footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        font-size: 2rem;
+        align-items: center;
+    }
+    .container-footer-links{
+        display: flex;
+        justify-content: start;
+    }
+    .container-footer-name{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
 }

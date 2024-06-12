@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@font-face {
+    font-family: "bricolage";
+    src: url(../fonts/bricolageOne.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: wheat;
+}
+
+body {
+    background-color: #272727;
+    font-family: "bricolage", sans-serif;
+}
+
+.main-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 1.5rem;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.img-icon {
+    display: flex;
+    align-items: center;
+    width: 2rem; /* Ajustamos el tamaño del ícono según sea necesario */
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 1rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 0.8rem;
+    font-family: "Dela Gothic One";
+}
+
+.menu li a:hover {
+    color: #FF8400;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    font-size: 1.5rem; /* Tamaño del icono de hamburguesa */
+    display: none; /* Ocultar el icono en pantallas grandes */
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar el icono solo en pantallas pequeñas */
+    }
+
+    .main-header {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem; /* Ajustar según el tamaño del encabezado */
+        right: 1.5rem;
+        background-color: #111111;
+        width: 150px; /* Ajustar según sea necesario */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
