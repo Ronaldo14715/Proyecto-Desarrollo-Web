@@ -8,14 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
-    </div>
+    
     <header class="main-header">
         <div class="div-icon">
             <a href="index.html"><img class="img-icon" src="../assets/img/crunchyrollIcon.png" alt="logo"></a>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav" id="main-nav">
             <ul class="menu">
                 <li><a href="./page/noticias.html">NOTICIAS</a></li>
                 <li><a href="./page/venta.html">VENTA</a></li>
@@ -23,14 +21,20 @@
                 <li><a href="./page/login.html">LOGIN</a></li>
             </ul>
         </nav>
-        
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </header>
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const menu = document.querySelector('.menu');
 
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const mainNav = document.getElementById('main-nav');
+
+        menuIcon.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            menuIcon.classList.toggle('open');
         });
     </script>
 </body>

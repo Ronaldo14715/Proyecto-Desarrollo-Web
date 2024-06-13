@@ -1,95 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
-@font-face {
-    font-family: "bricolage";
-    src: url(../fonts/bricolageOne.ttf);
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: wheat;
-}
-
 body {
-    background-color: #272727;
-    font-family: "bricolage", sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .main-header {
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem 1.5rem;
-    background-color: #111111;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    background-color: #333;
+    padding: 10px;
 }
 
-.img-icon {
-    display: flex;
-    align-items: center;
-    width: 2rem; /* Ajustamos el tamaño del ícono según sea necesario */
-}
-
-.main-nav {
-    display: flex;
-    align-items: center;
+.div-icon img {
+    width: 50px;
 }
 
 .menu {
-    list-style-type: none;
+    list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
 }
 
 .menu li {
-    margin-right: 1rem;
+    margin: 0 10px;
 }
 
-.menu li a {
+.menu a {
+    color: white;
     text-decoration: none;
-    color: wheat;
-    font-size: 0.8rem;
-    font-family: "Dela Gothic One";
+    padding: 10px;
+    display: block;
 }
 
-.menu li a:hover {
-    color: #FF8400;
+.menu a:hover {
+    background-color: #575757;
 }
 
-.menu-toggle {
+.menu-icon {
+    display: none;
+    flex-direction: column;
     cursor: pointer;
-    font-size: 1.5rem; /* Tamaño del icono de hamburguesa */
-    display: none; /* Ocultar el icono en pantallas grandes */
+}
+
+.menu-icon .bar {
+    width: 1rem;
+    height: 5px;
+    top: 0;
+    right: 0;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu-icon.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Mostrar el icono solo en pantallas pequeñas */
+    .div-icon{
+        display: none;
     }
-
-    .main-header {
+    .menu {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 4rem; /* Ajustar según el tamaño del encabezado */
-        right: 1.5rem;
-        background-color: #111111;
-        width: 150px; /* Ajustar según sea necesario */
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        z-index: 2;
+        width: 100%;
+        transform: translateY(-100%);
     }
-
-    .menu.active {
+    .menu li {
+        text-align: center;
+        margin: 0;
+    }
+    .menu-icon {
         display: flex;
     }
 
-    .menu li {
-        margin-right: 0;
-        margin-bottom: 0.5rem;
+    .main-nav.active .menu {
+        display: flex;
+        transform: translateY(0);
     }
 }
