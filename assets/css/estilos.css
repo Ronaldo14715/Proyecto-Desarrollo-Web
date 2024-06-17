@@ -8,12 +8,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: wheat;
 }
 body{
     background-color: #272727;
 }
+.containerx{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
 /* NAV */
+/* estilos.css */
 .main-header {
     display: flex;
     align-items: center;
@@ -24,28 +29,42 @@ body{
     left: 0;
     right: 0;
     background-color: #111111;
+    z-index: 1;
 }
+
 .nav-list {
-    display: flex;
+    display: flex !important; 
     gap: 1rem;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
+
 .nav-list li a {
     text-decoration: none;
     font-size: 0.8rem;
     display: flex;
-    font-family: "Dela Gothic One";
+    font-family: "Dela Gothic One", sans-serif; 
     transition: color 0.8s ease;
+    color: #ffffff;
 }
+
 .nav-list li a:hover {
     color: #E67300;
 }
+.nav-list li a.nav-active{
+    color: #E67300;
+}
+
 .img-icon {
     max-width: 3rem;
 }
+
 .abrir-menu, .cerrar-menu {
     display: none;
+    color: #ffffff;
 }
+
 @media (max-width: 600px) {
     .abrir-menu,
     .cerrar-menu {
@@ -55,13 +74,14 @@ body{
         background-color: transparent;
         cursor: pointer;
     }
+
     .main-nav {
         opacity: 0;
         visibility: hidden;
-        display: flex;
+        display: flex !important;
         flex-direction: column;
-        align-items: end;
-        height: 100vmax;
+        align-items: flex-end;
+        height: 100vh;
         gap: 1rem;
         position: absolute;
         top: 0;
@@ -69,18 +89,21 @@ body{
         bottom: 0;
         background-color: #1c1c1c;
         padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
         transition: opacity 0.5s ease, visibility 0.5s ease;
     }
+
     .main-nav.visible {
         opacity: 1;
         visibility: visible;
     }
+
     .nav-list {
         flex-direction: column;
         gap: 2rem;
     }
 }
+
 /* MAIN IMAGEN */ 
 .section-new{
     display: flex;
@@ -88,6 +111,7 @@ body{
 }
 .section-new .new-imagen{
     width: 100%;
+    height: auto;
 }
 /*SECCION DE ANIMES POPULARES */
 
@@ -97,6 +121,7 @@ body{
 .section-popular-title{
     font-family: "Dela Gothic One";
     padding: 1rem;
+    color: #ffffff;
 }
 .card{
     background-color: #111111;
@@ -112,18 +137,18 @@ body{
     height: auto;
 }
 .card-title{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    place-items: center center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+    padding: 1.5rem
 }
-.card-title {
-    padding: 10px;
-}
-.card-title p {
+.card-title p{
     font-family: monospace;
-    font-size: 0.95rem;
     font-weight: bold;
+    margin: 0 !important;
+    color: #ffffff;
 }
 
 .section-popular-cards{
@@ -145,7 +170,7 @@ body{
         gap: 2rem;
     }
     .card-title p{
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
     }
 }
 @media (min-width: 990px) and (max-width: 1920px){
@@ -156,89 +181,25 @@ body{
         gap: 2rem;
     }
     .card-title p{
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
     }
-    
 }
-
-
 /* FORMULARIO */
-.section-main-forms{
-    display: flex;
-    justify-content: space-between;
-    padding: 5rem;
-    gap: 3rem;
-    align-content: center;
-    align-items: center;
+.title-signIn, .title-logIn{
+    color: #E67300;
 }
-.title-signIn h2, .title-logIn h2{
-    font-family: "bricolage";
-    color: #FF8400;
-    font-weight: bold;
-    text-decoration: double;
-    font-size: 2rem;
+.formulario-signIn,.formulario-logIn label{
+    color: #ffffff;
 }
-.section-signIn{
-    width: 80rem;
-    background-color: #242222;
-    border: 0.1rem solid #FF8400;
-    border-radius: 0.5rem;
-    padding: 2rem;
-}
-.section-logIn{
-    width: 40rem;
-    background-color: #242222;
-    border: 0.1rem solid #FF8400;
-    border-radius: 0.5rem;
-    padding: 2rem;
-}
-.form-logIn, .form-signIn{
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-}
-.form-logIn label, .form-signIn label {
-    color: #FFFFFF;
-    font-family: "Dela Gothic One";
-    display: block; 
-    width: 100%; 
-    margin-bottom: 1rem; 
-}
-.form-signIn input, .form-logIn input{
-    color: #111111; 
-    font-family: "Dela Gothic One";
-    display: block; 
-    width: 100%; 
-    margin-bottom: 1rem; 
-    font-size: 1rem;
-}
-.title-signIn, .title-logIn {
-    margin: 2rem 0;
-    text-align: center;
-}
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 25rem;
-}
-.form-group input[type="button"] {
-    margin: 0 auto;
-    color: #FFFFFF; 
-    font-size: 1rem;
+.btn-sigIn, .btn-logIn{
     background-color: #FF8400;
-    border: none;
-    width: 10rem;
-    text-align: center;
-    padding: 1rem;
-    font-weight: bold;
-    font-family: "bricolage";
+    color: white;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-.form-group input[type="button"]:hover {
+.btn-sigIn:hover, .btn-logIn:hover {
     background-color: #E67300; 
     color: #FFFFFF; 
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 /* FOOOTER */
 
@@ -247,12 +208,12 @@ body{
     padding: 1rem;
     background-color: #111111;
 }
-
 .container-footer-links{
     gap: 1.2rem;
 }
 .container-footer-links a {
     text-decoration: none;
+    color: white;
 }
 .container-footer-links a {
     transition: all 1s ease;
@@ -265,6 +226,8 @@ body{
 .container-footer-name p{
     font-family: "bricolage";
     font-size: 1rem;
+    margin: 0 !important;
+    color: white;
 }
 
 @media (min-width: 300px) and (max-width: 500px){
@@ -284,7 +247,6 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
     }
 }
 @media (min-width: 501px) and (max-width: 989px){
@@ -321,5 +283,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: end;
+        padding: 0;
+        margin: 0;
     }
 }

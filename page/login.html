@@ -7,98 +7,132 @@
     <title>Nosotros</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" type="image/png" href="https://www.crunchyroll.com/build/assets/img/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/estilos.css">
 </head> 
 <body>
-    <header class="main-header">
-        <a href="./../index.html"><img class="img-icon" src="../assets/img/crunchyrollIcon.png" alt="logo"></a> 
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav id="main-nav" class="main-nav">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-            <ul class="nav-list">
-                <li><a href="noticias.html">NOTICIAS</a></li>
-                <li><a href="venta.html">VENTA</a></li>
-                <li><a href="nosotros.html">NOSOTROS</a></li> 
-                <li><a href="login.html">LOGIN</a></li> 
-            </ul>
-        </nav> 
-    </header>
-    <main class="main-account">
-        <section class="section-main-forms">
-            <div class="section-signIn">
-                <div class="title-signIn">
-                    <h2>CREAR CUENTA</h2>    
-                </div>
-                <div class="form-signIn">
-                    <form action="#" class="signIn">
-                        <div class="form-group">
-                            <label for="emailSignIn">EMAIL:</label>
-                            <input type="email" id="emailSignIn" name="emailSignIn" required> 
+    <div class="containerx">
+        <header class="main-header">
+            <a href="./../index.html"><img class="img-icon" src="../assets/img/crunchyrollIcon.png" alt="logo"></a> 
+            <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav id="main-nav" class="main-nav">
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <ul class="nav-list">
+                    <li><a href="./../index.html">INICIO</a></li>
+                    <li><a href="noticias.html">NOTICIAS</a></li>
+                    <li><a href="venta.html">VENTA</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a class="nav-active" href="login.html" >LOGIN</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container-fluid m-auto">
+            <div class="row d-flex justify-content-around align-items-center">
+                <div class="col-lg-6 col-md-12 col-sm-12 ">
+                    <form class="formulario-signIn col-12 form-signInx mt-5" action="#">
+                        <div class="row mb-5 d-flex justify-content-center">
+                            <div class="col-sm-12">
+                                <h2 class="title-signIn text-center">CREAR CUENTA</h2>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="usuarioSignIn">USUARIO:</label>
-                            <input type="text" id="usuarioSignIn" name="usuarioSignIn" required> 
+                        <div class="row d-flex justify-content-center mb-3">
+                            <div class="col-sm-10 col-md-6 col-lg-4 mb-3">
+                                <label class="form-label" for="txtEmail">Correo</label>
+                                <input type="email" class="form-control" id="txtEmail">
+                            </div>
+                            <div class="col-sm-10 col-md-6 col-lg-4">
+                                <label class="form-label" for="txtUsuario">Usuario</label>
+                                <input type="text" class="form-control" id="txtUsuario">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="passwordSignIn">CONTRASEÑA:</label>
-                            <input type="password" id="passwordSignIn" name="passwordSignIn" required> 
+                        <div class="row d-flex justify-content-center mb-3">
+                            <div class="col-sm-10 col-md-6 col-lg-4 mb-3">           
+                                <label class="form-label" for="txtPassword">Contraseña</label>                 
+                                <input type="password" class="form-control" id="txtPassword" >
+                            </div>
+                            <div class="col-sm-10 col-md-6 col-lg-4">
+                                <label class="form-label" for="txtNombre">Nombre</label>
+                                <input type="text" class="form-control" id="txtNombre" >
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="nombreSingIn">NOMBRE:</label>
-                            <input type="text" id="nombreSingIn" name="nombreSingIn" required>
+                        <div class="row d-flex justify-content-center mb-3">
+                            <div class="col-sm-10 col-md-4 col-lg-3"> 
+                                <label class="form-label" for="selectGenero">Genero:</label>
+                                <select class="form-select" id="selectGenero" >
+                                    <option value="0">Hombre</option>
+                                    <option value="1">Mujer</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-10 col-md-4 col-lg-3">
+                                <label class="form-label" for="txtPais">Pais</label>
+                                <input type="text" class="form-control" id="txtPais">
+                            </div>
+                            <div class="col-sm-10 col-md-4 col-lg-2">
+                                <label class="form-label" for="txtCiudad">Ciudad</label>
+                                <input type="text" class="form-control" id="txtCiudad">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="button" required value="CREAR CUENTA"> 
+                        <div class="row my-5">
+                            <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
+                                <button type="button" class="btn btn-sigIn">Crear Cuenta</button>
+                            </div>
                         </div>
                     </form>
                 </div>
-            </div>
-            <div class="section-logIn">
-                <div class="title-logIn">
-                    <h2>ACCEDER</h2>
-                </div>
-                <div class="form-logIn">
-                    <form action="#" class="logIn">
-                        <div class="form-group">
-                            <label for="emailLogIn">EMAIL:</label>
-                            <input type="email" id="emailLogIn" name="emailLogIn" required> 
+                
+                
+                <div class=" col-lg-4 col-md-6 col-sm-12">
+                    <form class="formulario-logIn col-12 mt-5" action="#">
+                        <div class="row mb-5 d-flex justify-content-center">
+                            <div class="col-sm-12">
+                                <h2 class="title-signIn text-center">ACCEDER</h2>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="passwordLogIn">CONTRASEÑA:</label>
-                            <input type="password" id="passwordLogIn" name="passwordLogIn" required> 
+                        <div class="row d-flex justify-content-center mb-3">
+                            <div class="col-sm-10 col-md-8 col-lg-8 mb-3">
+                                <label class="form-label" for="txtEmail">Correo</label>
+                                <input type="email" class="form-control" id="txtEmail">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="button" required value="ACCEDER"> 
+                        <div class="row d-flex justify-content-center mb-3">
+                            <div class="col-sm-10 col-md-8 col-lg-8 mb-3">
+                                <label class="form-label" for="txtEmail">Correo</label>
+                                <input type="email" class="form-control" id="txtEmail">
+                            </div>
+                        </div>
+                        <div class="row my-5">
+                            <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center">
+                                <button type="button" class="btn btn-logIn">Crear Cuenta</button>
+                            </div>
                         </div>
                     </form>
                 </div>
-            </div>
-        </section>
-
-    </main>
-    <footer class="main-footer">
-        <div class="container-footer">
-            <div class="container-footer-links">
-                <a target="_blank" href="https://www.facebook.com/RonaldoFarfanA/">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/ronaldo-farfan-ayma-968000150/">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a target="_blank" href="https://www.instagram.com/ronaldofarfan/">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a target="_blank" href="https://github.com/Ronaldo14715">
-                    <i class="bi bi-github"></i>
-                </a>
-            </div>
-            <div class="container-footer-name">
-                <p>Ronaldo F.</p>
-                <p>Desarrollo Web</p>
-                <p>Lima, Perú - 936364880</p>
             </div>
         </div>
-    </footer>
+        <footer class="main-footer">
+            <div class="container-footer">
+                <div class="container-footer-links">
+                    <a target="_blank" href="https://www.facebook.com/RonaldoFarfanA/">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/ronaldo-farfan-ayma-968000150/">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/ronaldofarfan/">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/Ronaldo14715">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+                <div class="container-footer-name">
+                    <p>Ronaldo F.</p>
+                    <p>Desarrollo Web</p>
+                    <p>Lima, Perú - 936364880</p>
+                </div>
+            </div>
+        </footer>
+    </div>
 <script src="../assets/js/main.js"></script>
 </body>
 </html>
