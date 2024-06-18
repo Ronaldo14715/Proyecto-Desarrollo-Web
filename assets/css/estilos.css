@@ -294,3 +294,10 @@ body{
 .card .card-body h5,p{
     color: white;
 }
+.card-footer{
+    background-color: #ffffff;
+}
+.card-footer p{
+    color: #111111;
+    font-weight: bold;
+}
