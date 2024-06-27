@@ -33,7 +33,7 @@ body{
 }
 
 .nav-list {
-    display: flex !important; 
+    display: flex; 
     gap: 1rem;
     list-style-type: none;
     padding: 0;
@@ -78,7 +78,7 @@ body{
     .main-nav {
         opacity: 0;
         visibility: hidden;
-        display: flex !important;
+        display: flex;
         flex-direction: column;
         align-items: flex-end;
         height: 100vh;
@@ -137,17 +137,17 @@ body{
     height: auto;
 }
 .card-title{
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
+    display: flex ;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: center;
     text-align: center;
     padding: 1.5rem
 }
 .card-title p{
     font-family: monospace;
     font-weight: bold;
-    margin: 0 !important;
+    margin: 0;
     color: #ffffff;
 }
 
@@ -170,7 +170,7 @@ body{
         gap: 2rem;
     }
     .card-title p{
-        font-size: 0.8rem !important;
+        font-size: 0.8rem;
     }
 }
 @media (min-width: 990px) and (max-width: 1920px){
@@ -181,7 +181,7 @@ body{
         gap: 2rem;
     }
     .card-title p{
-        font-size: 0.8rem !important;
+        font-size: 0.8rem;
     }
 }
 /* FORMULARIO */
@@ -226,8 +226,8 @@ body{
 .container-footer-name p{
     font-family: "bricolage";
     font-size: 1rem;
-    margin: 0 !important;
-    color: white;
+    margin: 0;
+    color: #ffffff;
 }
 
 @media (min-width: 300px) and (max-width: 500px){
