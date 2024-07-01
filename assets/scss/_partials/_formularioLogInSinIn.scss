@@ -1,0 +1,29 @@
+@use 'variables.scss' as *;
+
+.formulario-signIn, .formulario-logIn{
+
+    .title-signIn, .title-logIn{
+        color: $naranja;
+    }
+
+    label{
+        color: $blanco;
+    }
+
+    .btn-sigIn, .btn-logIn{
+        background-color: $formBtn;
+        color: $blanco;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+        &:hover{
+            background-color: $naranja; 
+            color: $blanco; 
+            transform: scale(1.2);
+        }
+
+    }
+
+}
+
+
+

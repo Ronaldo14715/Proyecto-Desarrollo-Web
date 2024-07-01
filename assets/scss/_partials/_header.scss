@@ -1,0 +1,59 @@
+@use 'variables.scss' as *;
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $cardColor;
+    z-index: 1;
+
+    .img-icon {
+        max-width: 3rem;
+    }
+    
+    .abrir-menu {
+        display: none;
+        color: $blanco;
+    }
+
+    .main-nav{
+
+        .cerrar-menu{
+            display: none;
+            color: $blanco;
+        }
+
+    }
+
+    .nav-list {
+        display: flex; 
+        gap: 1rem;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li a {
+            text-decoration: none;
+            font-size: 0.8rem;
+            display: flex;
+            font-family: $delaGothicOne;
+            transition: color 0.8s ease;
+            color: $blanco;
+
+            &:hover{
+                color: $naranja;
+            }
+
+            &.nav-active{
+                color: $naranja;
+            }
+            
+        }
+    }
+    
+}

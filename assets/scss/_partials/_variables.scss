@@ -1,0 +1,41 @@
+/*
+-----------VARIABLES----------
+*/
+
+/* COLORES */
+
+$bodyColor: #272727;
+$navColor: #1c1c1c;
+$blanco: #ffffff; 
+$naranja: #E67300; 
+$cardColor: #111111;
+$cardVentaColor: #2e2e2e;
+$formBtn: #FF8400;
+$negroTransparente: rgba(0, 0, 0, 0.5);
+/* COLORES */
+
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+$delaGothicOne: "Dela Gothic One", sans-serif;
+$bricolage: "Bricolage Grotesque", sans-serif;
+/* FUENTES  */
+
+/* BREAKPOINT */
+$minXsMobile: 0px;
+$maxXsMobile: 575px;
+
+$minSmMobile: 576px;
+$maxSmMobile: 767px;
+
+$minDesktopMedium: 768px;
+$maxDesktopMedium: 991px;
+
+$minDesktopLarge: 992px;
+$maxDesktopLarge: 1320px;
+
+$minDesktopXLarge: 1321px; 
+$maxDesktopXLarge: 1920px;
+/* BREAKPOINT */

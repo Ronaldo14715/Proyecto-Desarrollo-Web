@@ -1,0 +1,32 @@
+@use 'variables.scss' as *;
+
+$columnaCard: (columna1: izquierda, columna2: medio, columna3: derecha);
+
+
+@each $key, $valor in $columnaCard{
+    .cards-columna-#{$valor}{
+
+        .card{
+            border: none;
+            background-color: $cardColor;
+
+            .card-body{
+
+                h5,p{
+                    color: $blanco;
+                }
+
+            }
+            .card-footer{
+                background-color: $blanco;
+
+                p{
+                    color: $cardColor;
+                    font-weight: bold;
+                }
+
+            }
+        }
+        
+    }
+}

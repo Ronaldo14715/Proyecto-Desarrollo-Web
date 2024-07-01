@@ -1,0 +1,45 @@
+@use 'variables.scss' as *;
+
+.main-footer{
+
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: $cardColor;
+
+    .container-footer{
+
+        .container-footer-links{
+
+            gap: 1.2rem;
+
+            a {
+                text-decoration: none;
+                color: $blanco;
+                transition: all 1s ease;
+
+                &:hover{
+                    color: $naranja;
+                    cursor: pointer;
+                    transform: scale(1.2);
+                }
+
+            }
+            
+        }
+
+        .container-footer-name {
+
+            p{
+                font-family: $bricolage;
+                font-size: 1rem;
+                margin: 0;
+                color: $blanco;
+            }
+            
+        }
+
+    }
+}
+
+
+

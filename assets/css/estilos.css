@@ -74,7 +74,6 @@ body{
         background-color: transparent;
         cursor: pointer;
     }
-
     .main-nav {
         opacity: 0;
         visibility: hidden;
@@ -103,7 +102,6 @@ body{
         gap: 2rem;
     }
 }
-
 /* MAIN IMAGEN */ 
 .section-new{
     display: flex;
@@ -113,6 +111,10 @@ body{
     width: 100%;
     height: auto;
 }
+
+
+
+
 /*SECCION DE ANIMES POPULARES */
 
 .section-popular{

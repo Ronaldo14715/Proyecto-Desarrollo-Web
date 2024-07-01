@@ -1,0 +1,72 @@
+@use 'variables.scss' as *;
+
+.container-productos{
+    padding: 1rem;
+
+    .producto-figuras{
+
+        .card-producto-figura{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            outline: 1px solid $naranja;
+            width: 100%;
+            background-color: $cardVentaColor;
+
+            .card-producto-figura-header{
+                display: flex;
+                justify-content: center;
+            }
+
+            .card-producto-figura-body{ 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem 0 1rem 0;
+                gap: 1rem;
+
+
+                .card-body-span-descripcion{
+                    text-align: center;
+                    color: $blanco;
+                    font-weight: bold;
+                }
+                .card-body-span-precio{
+                    text-align: center;
+                    color: $naranja;
+                    font-weight: bold;
+                }
+
+            }
+
+            .card-producto-figura-footer{
+                padding: 1rem 0 1rem 0;
+                background-color: $navColor;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .card-footer-button{
+                   
+                    padding: 0.5rem;
+                    background-color: $formBtn;
+                    color: $blanco;
+                    transition: background-color 0.5s ease-in-out;
+
+                    &:hover{
+                        background-color: $naranja;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .producto-funkoPop, .producto-juegos, .producto-accesorios{
+        display: none;
+    }
+}
