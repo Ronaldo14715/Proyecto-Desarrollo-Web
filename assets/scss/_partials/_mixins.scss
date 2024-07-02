@@ -37,3 +37,30 @@
     }
 
 }
+
+@mixin dFlexColumnItemsCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin dFlexColumnItemsEnd{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+@mixin dFlexRowItemsCenter{
+    display: flex;
+    align-items: center;
+}
+
+@mixin dFlexRowJustifyStart{
+    display: flex;
+    justify-content: start;
+}
+
+@mixin dFlexRowJustifyCenter{
+    display: flex;
+    justify-content: center;
+}

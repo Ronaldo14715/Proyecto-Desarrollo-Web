@@ -1,31 +1,47 @@
 @use 'variables.scss' as *;
+@use 'mixins.scss' as *;
 
 .container-productos{
     padding: 1rem;
 
+    .container-productos-buttons{
+        @include dFlexRowJustifyCenter;
+        gap: 1rem;
+        margin: 0 0 2rem 0;
+
+        .productos-buttons{
+            padding: 1rem;
+            color: $blanco;
+            background-color: $formBtn;
+            transition: all 0.5s ease-in-out;
+            border: 0;
+            font-weight: 600;
+
+            &:hover{
+                background-color: $naranja;
+                transform: scale(1.1);
+            }
+
+        }
+
+    }
+
     .producto-figuras{
 
         .card-producto-figura{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include dFlexColumnItemsCenter;
             outline: 1px solid $naranja;
             width: 100%;
             background-color: $cardVentaColor;
 
             .card-producto-figura-header{
-                display: flex;
-                justify-content: center;
+                @include dFlexRowJustifyCenter;
             }
 
             .card-producto-figura-body{ 
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include dFlexColumnItemsCenter;
                 padding: 1rem 0 1rem 0;
                 gap: 1rem;
-
 
                 .card-body-span-descripcion{
                     text-align: center;
@@ -41,11 +57,10 @@
             }
 
             .card-producto-figura-footer{
+                @include dFlexRowJustifyCenter;
                 padding: 1rem 0 1rem 0;
                 background-color: $navColor;
                 width: 100%;
-                display: flex;
-                justify-content: center;
 
                 .card-footer-button{
                    
@@ -53,6 +68,7 @@
                     background-color: $formBtn;
                     color: $blanco;
                     transition: background-color 0.5s ease-in-out;
+                    border: 0;
 
                     &:hover{
                         background-color: $naranja;
@@ -66,7 +82,7 @@
 
     }
 
-    .producto-funkoPop, .producto-juegos, .producto-accesorios{
+    .producto-funkoPop, .producto-juegos, .producto-accesorios, .producto-figuras{
         display: none;
     }
 }

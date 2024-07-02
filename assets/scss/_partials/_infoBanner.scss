@@ -1,8 +1,8 @@
 @use 'variables.scss' as *;
+@use 'mixins.scss' as *;
 
 .main-info-banner{
-    display: flex;
-    justify-content: center;
+    @include dFlexRowJustifyCenter;
     margin: 5rem 0 5rem 0;
     padding: 1rem;
 }

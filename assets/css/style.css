@@ -85,7 +85,7 @@ body {
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: end;
     height: 100vh;
     gap: 1rem;
     position: absolute;
@@ -104,10 +104,9 @@ body {
   .main-header .main-nav .nav-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
   }
   .main-header .main-nav .nav-list li a {
     text-decoration: none;
@@ -201,7 +200,7 @@ body {
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: end;
     height: 100vh;
     gap: 1rem;
     position: absolute;
@@ -220,10 +219,9 @@ body {
   .main-header .main-nav .nav-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1rem;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
   }
   .main-header .main-nav .nav-list li a {
     text-decoration: none;
@@ -438,8 +436,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: end;
-    padding: 0;
-    margin: 0;
   }
   .main-info-banner .info-banner-img {
     height: auto;
@@ -510,8 +506,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: center;
   padding: 1.5rem;
 }
 .section-popular .section-popular-cards .cardx .card-title p {
@@ -593,11 +588,28 @@ body {
 .container-productos {
   padding: 1rem;
 }
+.container-productos .container-productos-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 0 2rem 0;
+}
+.container-productos .container-productos-buttons .productos-buttons {
+  padding: 1rem;
+  color: #ffffff;
+  background-color: #FF8400;
+  transition: all 0.5s ease-in-out;
+  border: 0;
+  font-weight: 600;
+}
+.container-productos .container-productos-buttons .productos-buttons:hover {
+  background-color: #E67300;
+  transform: scale(1.1);
+}
 .container-productos .producto-figuras .card-producto-figura {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   outline: 1px solid #E67300;
   width: 100%;
   background-color: #2e2e2e;
@@ -624,22 +636,23 @@ body {
   font-weight: bold;
 }
 .container-productos .producto-figuras .card-producto-figura .card-producto-figura-footer {
+  display: flex;
+  justify-content: center;
   padding: 1rem 0 1rem 0;
   background-color: #1c1c1c;
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 .container-productos .producto-figuras .card-producto-figura .card-producto-figura-footer .card-footer-button {
   padding: 0.5rem;
   background-color: #FF8400;
   color: #ffffff;
   transition: background-color 0.5s ease-in-out;
+  border: 0;
 }
 .container-productos .producto-figuras .card-producto-figura .card-producto-figura-footer .card-footer-button:hover {
   background-color: #E67300;
 }
-.container-productos .producto-funkoPop, .container-productos .producto-juegos, .container-productos .producto-accesorios {
+.container-productos .producto-funkoPop, .container-productos .producto-juegos, .container-productos .producto-accesorios, .container-productos .producto-figuras {
   display: none;
 }
 

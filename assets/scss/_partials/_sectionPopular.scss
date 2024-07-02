@@ -1,4 +1,5 @@
 @use 'variables.scss' as *;
+@use 'mixins.scss' as *;
 
 .section-popular{
     padding: 1rem;
@@ -28,11 +29,8 @@
             }
 
             .card-title{
-                display: flex ;
-                flex-direction: column;
+                @include dFlexColumnItemsCenter;
                 align-items: center ;
-                justify-content: center;
-                text-align: center;
                 padding: 1.5rem;
 
                 p{

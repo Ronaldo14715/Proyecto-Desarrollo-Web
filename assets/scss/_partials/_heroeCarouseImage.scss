@@ -1,7 +1,8 @@
+@use 'variables.scss' as *;
+@use 'mixins.scss' as *;
 /* HERO CAROUSEL */
 .hero-carousel{
-    display: flex;
-    justify-content: center;
+    @include dFlexRowJustifyCenter;
 
     .hero-carousel-imagen{
         width: 100%;
