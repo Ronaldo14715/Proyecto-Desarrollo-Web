@@ -107,7 +107,7 @@
         
     }
 
-    .producto-figuras{
+    .producto{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
@@ -117,16 +117,16 @@
     
     .container-productos{
 
-        .producto-figuras{
+        .producto{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: auto;
             gap: 2rem;
             place-items: center center;
             
-            .card-producto-figura{
+            .card-producto{
 
-                .card-producto-figura-header{
+                .card-producto-header{
                     padding: 0 0 1rem 0;
                         .card-header-img{
                             width: 100%;
@@ -134,7 +134,7 @@
 
                 }
 
-                .card-producto-figura-body{
+                .card-producto-body{
                     width: 100%;
 
                     .card-body-span-descripcion{
@@ -260,38 +260,42 @@
     
     .container-productos{
 
-        .producto-figuras{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto;
-            gap: 2rem;
-            place-items: center center;
-            
-            .card-producto-figura{
-
-                .card-producto-figura-header{
-                    padding: 0 0 1rem 0;
-                        .card-header-img{
-                            width: 100%;
+        .contenedor-productosx{
+            .producto{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                gap: 2rem;
+                place-items: center center;
+                
+                .card-producto{
+    
+                    .card-producto-header{
+                        padding: 0 0 1rem 0;
+                            .card-header-img{
+                                width: 100%;
+                            }
+    
+                    }
+    
+                    .card-producto-body{
+                        width: 80%;
+    
+                        .card-body-span-descripcion{
+                            font-size: 0.6rem;
                         }
-
-                }
-
-                .card-producto-figura-body{
-                    width: 80%;
-
-                    .card-body-span-descripcion{
-                        font-size: 0.6rem;
+                        .card-body-span-precio{
+                            font-size: 0.8rem;
+                        }
+    
                     }
-                    .card-body-span-precio{
-                        font-size: 0.8rem;
-                    }
-
+    
                 }
-
+                
             }
-            
+
         }
+
     }
 
 }
@@ -349,33 +353,37 @@
     .container-productos{
         margin: 5rem;
 
-        .producto-figuras{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto;
-            gap: 2rem;
-            place-items: center center;
-
-            .card-producto-figura-header{
-                padding: 0 0 1rem 0;
-                
-                    .card-header-img{
-                        width: 100%;
+        .contenedor-productosx{
+            .producto{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                gap: 2rem;
+                place-items: center center;
+    
+                .card-producto-header{
+                    padding: 0 0 1rem 0;
+                    
+                        .card-header-img{
+                            width: 100%;
+                        }
+        
+                }
+                .card-producto-body{
+                    width: 80%;
+    
+                    .card-body-span-descripcion{
+                        font-size: 0.6rem;
+                    }
+                    .card-body-span-precio{
+                        font-size: 1rem;
                     }
     
-            }
-            .card-producto-figura-body{
-                width: 80%;
-
-                .card-body-span-descripcion{
-                    font-size: 0.6rem;
                 }
-                .card-body-span-precio{
-                    font-size: 1rem;
-                }
-
             }
+
         }
+
     }
     
 }
@@ -433,37 +441,42 @@
     .container-productos{
         margin: 5rem;
 
-        .producto-figuras{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto;
-            gap: 2rem;
-            place-items: center center;
+        .contenedor-productosx{
 
-            .card-producto-figura-header{
-                padding: 1rem 0 1rem 0;
-
-                    .card-header-img{
-                        width: 70%;
+            .producto{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+                gap: 2rem;
+                place-items: center center;
+    
+                .card-producto-header{
+                    padding: 1rem 0 1rem 0;
+    
+                        .card-header-img{
+                            width: 70%;
+                        }
+        
+                }
+                .card-producto-body{
+                    width: 350px;
+    
+                    .card-body-span-descripcion{
+                        font-size: 1rem;
                     }
     
-            }
-            .card-producto-figura-body{
-                width: 350px;
-
-                .card-body-span-descripcion{
-                    font-size: 1rem;
-                }
-
-                .card-body-span-precio{
-                    font-size: 1.4rem;
+                    .card-body-span-precio{
+                        font-size: 1.4rem;
+                    }
+    
                 }
 
             }
+
         }
+        
     }
     
-
 }
 
 @include responsive(xl){
@@ -513,44 +526,41 @@
         }
 
     }
-
+    
     .container-productos{
         margin: 5rem;
 
-        .producto-figuras{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: auto;
-            gap: 2rem;
-            place-items: center center;
-
-            .card-producto-figura-header{
-                padding: 1rem 0 1rem 0;
-
-                    .card-header-img{
-                        width: 70%;
+        .contenedor-productosx{
+            .producto{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                gap: 2rem;
+                place-items: center center;
+    
+                .card-producto-header{
+                    padding: 1rem 0 1rem 0;
+    
+                        .card-header-img{
+                            width: 70%;
+                        }
+        
+                }
+                .card-producto-body{
+                    width: 350px;
+    
+                    .card-body-span-descripcion{
+                        font-size: 1rem;
                     }
     
-            }
-            .card-producto-figura-body{
-                width: 350px;
-
-                .card-body-span-descripcion{
-                    font-size: 1rem;
+                    .card-body-span-precio{
+                        font-size: 1.4rem;
+                    }
+    
                 }
-
-                .card-body-span-precio{
-                    font-size: 1.4rem;
-                }
-
             }
+
         }
+
     }
 }
-
-   
-
-       
-        
-        
-    

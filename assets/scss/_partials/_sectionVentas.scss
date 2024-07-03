@@ -6,6 +6,7 @@
 
     .container-productos-buttons{
         @include dFlexRowJustifyCenter;
+        flex-wrap: wrap;
         gap: 1rem;
         margin: 0 0 2rem 0;
 
@@ -26,63 +27,62 @@
 
     }
 
-    .producto-figuras{
+    .contenedor-productosx{
+        .producto{
 
-        .card-producto-figura{
-            @include dFlexColumnItemsCenter;
-            outline: 1px solid $naranja;
-            width: 100%;
-            background-color: $cardVentaColor;
-
-            .card-producto-figura-header{
-                @include dFlexRowJustifyCenter;
-            }
-
-            .card-producto-figura-body{ 
+            .card-producto{
                 @include dFlexColumnItemsCenter;
-                padding: 1rem 0 1rem 0;
-                gap: 1rem;
-
-                .card-body-span-descripcion{
-                    text-align: center;
-                    color: $blanco;
-                    font-weight: bold;
-                }
-                .card-body-span-precio{
-                    text-align: center;
-                    color: $naranja;
-                    font-weight: bold;
-                }
-
-            }
-
-            .card-producto-figura-footer{
-                @include dFlexRowJustifyCenter;
-                padding: 1rem 0 1rem 0;
-                background-color: $navColor;
+                outline: 1px solid $naranja;
                 width: 100%;
-
-                .card-footer-button{
-                   
-                    padding: 0.5rem;
-                    background-color: $formBtn;
-                    color: $blanco;
-                    transition: background-color 0.5s ease-in-out;
-                    border: 0;
-
-                    &:hover{
-                        background-color: $naranja;
-                    }
-
+                background-color: $cardVentaColor;
+    
+                .card-producto-header{
+                    @include dFlexRowJustifyCenter;
                 }
-
+    
+                .card-producto-body{ 
+                    @include dFlexColumnItemsCenter;
+                    padding: 1rem 0 1rem 0;
+                    gap: 1rem;
+    
+                    .card-body-span-descripcion{
+                        text-align: center;
+                        color: $blanco;
+                        font-weight: bold;
+                    }
+                    .card-body-span-precio{
+                        text-align: center;
+                        color: $naranja;
+                        font-weight: bold;
+                    }
+    
+                }
+    
+                .card-producto-footer{
+                    @include dFlexRowJustifyCenter;
+                    padding: 1rem 0 1rem 0;
+                    background-color: $navColor;
+                    width: 100%;
+    
+                    .card-footer-button{
+                        padding: 0.5rem;
+                        background-color: $formBtn;
+                        color: $blanco;
+                        transition: background-color 0.5s ease-in-out;
+                        border: 0;
+    
+                        &:hover{
+                            background-color: $naranja;
+                        }
+    
+                    }
+    
+                }
+    
             }
-
+    
         }
 
     }
-
-    .producto-funkoPop, .producto-juegos, .producto-accesorios, .producto-figuras{
-        display: none;
-    }
+    
 }
