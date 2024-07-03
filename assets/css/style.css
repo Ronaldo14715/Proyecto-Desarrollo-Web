@@ -607,6 +607,9 @@ body {
   background-color: #E67300;
   transform: scale(1.1);
 }
+.container-productos .contenedor-productosx .producto-funkoPop, .container-productos .contenedor-productosx .producto-juegos, .container-productos .contenedor-productosx .producto-accesorios {
+  display: none;
+}
 .container-productos .contenedor-productosx .producto .card-producto {
   display: flex;
   flex-direction: column;

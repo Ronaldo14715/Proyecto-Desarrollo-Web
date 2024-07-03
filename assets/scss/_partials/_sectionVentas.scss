@@ -28,6 +28,11 @@
     }
 
     .contenedor-productosx{
+
+        .producto-funkoPop, .producto-juegos, .producto-accesorios{
+            display: none;
+        }
+
         .producto{
 
             .card-producto{

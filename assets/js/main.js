@@ -1,7 +1,7 @@
 // Variables para el NAV
-let abrir = document.getElementById('abrir');
-let cerrar = document.getElementById('cerrar');
-let nav = document.getElementById('ain-nav');
+const abrir = document.querySelector('#abrir');
+const cerrar = document.querySelector('#cerrar');
+const nav = document.querySelector('#main-nav');
 
 // Variables para los botones - VENTAS
 let btnFigura = document.getElementById('producto-btn-figura');
@@ -23,6 +23,7 @@ abrir.addEventListener('click', () => {
 cerrar.addEventListener('click', () => {
     nav.classList.remove("visible");
 });
+
 
 // Contenedor Ventas
 function mostrarContenedorVenta(id) {
