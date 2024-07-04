@@ -2,8 +2,14 @@
 @use 'mixins.scss' as *;
 
 .container-productos{
-    padding: 1rem;
-
+    
+    .container-productos-h1{
+        text-align: center;
+        padding: 1rem;
+        h1{
+            color: $blanco;
+        }
+    }
     .container-productos-buttons{
         @include dFlexRowJustifyCenter;
         flex-wrap: wrap;
@@ -15,12 +21,20 @@
             color: $blanco;
             background-color: $formBtn;
             transition: all 0.5s ease-in-out;
-            border: 0;
+            border: 1px solid $naranja;
             font-weight: 600;
 
             &:hover{
-                background-color: $naranja;
+                background-color: $blanco;
+                color: $naranja;
+                border: 1px solid $naranja;
                 transform: scale(1.1);
+            }
+
+            &.visible{
+                background-color: $blanco;
+                color: $naranja;
+                border: 1px solid $naranja;
             }
 
         }
@@ -28,7 +42,7 @@
     }
 
     .contenedor-productosx{
-
+        margin: 1rem;
         .producto-funkoPop, .producto-juegos, .producto-accesorios{
             display: none;
         }
@@ -73,11 +87,12 @@
                         padding: 0.5rem;
                         background-color: $formBtn;
                         color: $blanco;
-                        transition: background-color 0.5s ease-in-out;
-                        border: 0;
+                        transition: background-color 0.8s ease-in-out;
+                        border: 1px solid $naranja;
     
                         &:hover{
-                            background-color: $naranja;
+                            background-color: $blanco;
+                            color: $naranja;
                         }
     
                     }

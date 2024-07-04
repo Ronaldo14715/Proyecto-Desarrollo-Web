@@ -327,7 +327,7 @@ body {
     cursor: pointer;
   }
   .container-productos {
-    margin: 5rem;
+    margin: 1rem;
   }
   .container-productos .contenedor-productosx .producto {
     display: grid;
@@ -386,7 +386,7 @@ body {
     cursor: pointer;
   }
   .container-productos {
-    margin: 5rem;
+    margin: 1rem;
   }
   .container-productos .contenedor-productosx .producto {
     display: grid;
@@ -443,7 +443,7 @@ body {
     cursor: pointer;
   }
   .container-productos {
-    margin: 5rem;
+    margin: 1rem;
   }
   .container-productos .contenedor-productosx .producto {
     display: grid;
@@ -585,8 +585,12 @@ body {
   padding: 1rem;
 }
 
-.container-productos {
+.container-productos .container-productos-h1 {
+  text-align: center;
   padding: 1rem;
+}
+.container-productos .container-productos-h1 h1 {
+  color: #ffffff;
 }
 .container-productos .container-productos-buttons {
   display: flex;
@@ -600,12 +604,22 @@ body {
   color: #ffffff;
   background-color: #FF8400;
   transition: all 0.5s ease-in-out;
-  border: 0;
+  border: 1px solid #E67300;
   font-weight: 600;
 }
 .container-productos .container-productos-buttons .productos-buttons:hover {
-  background-color: #E67300;
+  background-color: #ffffff;
+  color: #E67300;
+  border: 1px solid #E67300;
   transform: scale(1.1);
+}
+.container-productos .container-productos-buttons .productos-buttons.visible {
+  background-color: #ffffff;
+  color: #E67300;
+  border: 1px solid #E67300;
+}
+.container-productos .contenedor-productosx {
+  margin: 1rem;
 }
 .container-productos .contenedor-productosx .producto-funkoPop, .container-productos .contenedor-productosx .producto-juegos, .container-productos .contenedor-productosx .producto-accesorios {
   display: none;
@@ -650,11 +664,12 @@ body {
   padding: 0.5rem;
   background-color: #FF8400;
   color: #ffffff;
-  transition: background-color 0.5s ease-in-out;
-  border: 0;
+  transition: background-color 0.8s ease-in-out;
+  border: 1px solid #E67300;
 }
 .container-productos .contenedor-productosx .producto .card-producto .card-producto-footer .card-footer-button:hover {
-  background-color: #E67300;
+  background-color: #ffffff;
+  color: #E67300;
 }
 
 .main-footer {
