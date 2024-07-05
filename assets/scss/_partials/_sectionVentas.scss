@@ -52,7 +52,7 @@
             .card-producto{
                 @include dFlexColumnItemsCenter;
                 outline: 1px solid $naranja;
-                width: 100%;
+                width: 80%;
                 background-color: $cardVentaColor;
     
                 .card-producto-header{
