@@ -1,5 +1,5 @@
-@use 'variables.scss' as *;
-@use 'mixins.scss' as *;
+@use '../_utilities/variables' as *;
+@use '../_utilities/mixins.scss' as *;
 
 .main-info-banner{
     @include dFlexRowJustifyCenter;

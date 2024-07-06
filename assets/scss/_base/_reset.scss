@@ -1,0 +1,11 @@
+@use '../_utilities/variables' as *;
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $bodyColor;
+}
+/* RESET */

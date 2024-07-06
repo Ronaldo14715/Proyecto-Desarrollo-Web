@@ -1,8 +1,8 @@
 //VARIABLES
-@use './_partials/variables.scss';
+@use './_utilities/variables' as *;
 
 //RESET 
-@use './_partials/reset.scss';
+@use './_base/reset';
 
 //CONTENEDOR PRINCIPAL
 @use './_partials/containerPrincipal.scss';
@@ -10,7 +10,7 @@
 //HEADER
 @use './_partials/header.scss';
 
-//INDEX
+//INDEX 
 @use './_partials/heroeCarouseImage.scss';
 @use './_partials/sectionPopular.scss';
 @use './_partials/infoBanner.scss';
@@ -28,4 +28,5 @@
 @use './_partials/footer.scss';
 
 //MEDIA QUERYS
-@use './_partials/mediaQuery.scss';
+@use './_components/mediaQuery';
+

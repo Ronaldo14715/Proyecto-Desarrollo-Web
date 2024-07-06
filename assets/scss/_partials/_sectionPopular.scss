@@ -1,5 +1,5 @@
-@use 'variables.scss' as *;
-@use 'mixins.scss' as *;
+@use '../_utilities/variables' as *;
+@use '../_utilities/mixins.scss' as *;
 
 .section-popular{
     padding: 1rem;
@@ -7,6 +7,7 @@
     .section-popular-title{
         font-family: "Dela Gothic One";
         padding: 1rem;
+        text-align: center;
         color: $blanco;
     }
 

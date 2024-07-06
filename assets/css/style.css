@@ -72,6 +72,236 @@ body {
   color: #E67300;
 }
 
+/* HERO CAROUSEL */
+.hero-carousel {
+  display: flex;
+  justify-content: center;
+}
+.hero-carousel .hero-carousel-imagen {
+  width: 100%;
+  height: auto;
+}
+
+.section-popular {
+  padding: 1rem;
+}
+.section-popular .section-popular-title {
+  font-family: "Dela Gothic One";
+  padding: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+.section-popular .section-popular-cards {
+  place-items: center center;
+}
+.section-popular .section-popular-cards .cardx {
+  background-color: #111111;
+  transition: transform 0.3s;
+  width: 70%;
+}
+.section-popular .section-popular-cards .cardx:hover {
+  z-index: 0;
+  transform: scale(1.05);
+}
+.section-popular .section-popular-cards .cardx .card-img {
+  width: 100%;
+  height: auto;
+}
+.section-popular .section-popular-cards .cardx .card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.section-popular .section-popular-cards .cardx .card-title p {
+  font-family: monospace;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+}
+
+.main-info-banner {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0 5rem 0;
+  padding: 1rem;
+}
+
+.formulario-signIn .title-signIn, .formulario-signIn .title-logIn, .formulario-logIn .title-signIn, .formulario-logIn .title-logIn {
+  color: #E67300;
+}
+.formulario-signIn label, .formulario-logIn label {
+  color: #ffffff;
+}
+.formulario-signIn .btn-sigIn, .formulario-signIn .btn-logIn, .formulario-logIn .btn-sigIn, .formulario-logIn .btn-logIn {
+  background-color: #FF8400;
+  color: #ffffff;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.formulario-signIn .btn-sigIn:hover, .formulario-signIn .btn-logIn:hover, .formulario-logIn .btn-sigIn:hover, .formulario-logIn .btn-logIn:hover {
+  background-color: #E67300;
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+.cards-columna-izquierda .card {
+  border: none;
+  background-color: #111111;
+}
+.cards-columna-izquierda .card .card-body h5, .cards-columna-izquierda .card .card-body p {
+  color: #ffffff;
+}
+.cards-columna-izquierda .card .card-footer {
+  background-color: #ffffff;
+}
+.cards-columna-izquierda .card .card-footer p {
+  color: #111111;
+  font-weight: bold;
+}
+
+.cards-columna-medio .card {
+  border: none;
+  background-color: #111111;
+}
+.cards-columna-medio .card .card-body h5, .cards-columna-medio .card .card-body p {
+  color: #ffffff;
+}
+.cards-columna-medio .card .card-footer {
+  background-color: #ffffff;
+}
+.cards-columna-medio .card .card-footer p {
+  color: #111111;
+  font-weight: bold;
+}
+
+.cards-columna-derecha .card {
+  border: none;
+  background-color: #111111;
+}
+.cards-columna-derecha .card .card-body h5, .cards-columna-derecha .card .card-body p {
+  color: #ffffff;
+}
+.cards-columna-derecha .card .card-footer {
+  background-color: #ffffff;
+}
+.cards-columna-derecha .card .card-footer p {
+  color: #111111;
+  font-weight: bold;
+}
+
+.container-productos .container-productos-h1 {
+  text-align: center;
+  padding: 1rem;
+}
+.container-productos .container-productos-h1 h1 {
+  color: #ffffff;
+}
+.container-productos .container-productos-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 0 2rem 0;
+}
+.container-productos .container-productos-buttons .productos-buttons {
+  padding: 1rem;
+  color: #ffffff;
+  background-color: #FF8400;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #E67300;
+  font-weight: 600;
+}
+.container-productos .container-productos-buttons .productos-buttons:hover {
+  background-color: #ffffff;
+  color: #E67300;
+  border: 1px solid #E67300;
+  transform: scale(1.1);
+}
+.container-productos .container-productos-buttons .productos-buttons.visible {
+  background-color: #ffffff;
+  color: #E67300;
+  border: 1px solid #E67300;
+}
+.container-productos .contenedor-productosx {
+  margin: 1rem;
+}
+.container-productos .contenedor-productosx .producto-funkoPop, .container-productos .contenedor-productosx .producto-juegos, .container-productos .contenedor-productosx .producto-accesorios {
+  display: none;
+}
+.container-productos .contenedor-productosx .producto .card-producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid #E67300;
+  width: 80%;
+  background-color: #2e2e2e;
+}
+.container-productos .contenedor-productosx .producto .card-producto .card-producto-header {
+  display: flex;
+  justify-content: center;
+}
+.container-productos .contenedor-productosx .producto .card-producto .card-producto-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  gap: 1rem;
+}
+.container-productos .contenedor-productosx .producto .card-producto .card-producto-body .card-body-span-descripcion {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+.container-productos .contenedor-productosx .producto .card-producto .card-producto-body .card-body-span-precio {
+  text-align: center;
+  color: #E67300;
+  font-weight: bold;
+}
+.container-productos .contenedor-productosx .producto .card-producto .card-producto-footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+  background-color: #1c1c1c;
+  width: 100%;
+}
+.container-productos .contenedor-productosx .producto .card-producto .card-producto-footer .card-footer-button {
+  padding: 0.5rem;
+  background-color: #FF8400;
+  color: #ffffff;
+  transition: background-color 0.8s ease-in-out;
+  border: 1px solid #E67300;
+}
+.container-productos .contenedor-productosx .producto .card-producto .card-producto-footer .card-footer-button:hover {
+  background-color: #ffffff;
+  color: #E67300;
+}
+
+.main-footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #111111;
+}
+.main-footer .container-footer .container-footer-links {
+  gap: 1.2rem;
+}
+.main-footer .container-footer .container-footer-links a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 1s ease;
+}
+.main-footer .container-footer .container-footer-links a:hover {
+  color: #E67300;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.main-footer .container-footer .container-footer-name p {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  color: #ffffff;
+}
+
 @media (min-width: 0px) and (max-width: 575px) {
   .main-header .abrir-menu {
     display: block;
@@ -467,234 +697,6 @@ body {
   .container-productos .contenedor-productosx .producto .card-producto-body .card-body-span-precio {
     font-size: 1.4rem;
   }
-}
-/* HERO CAROUSEL */
-.hero-carousel {
-  display: flex;
-  justify-content: center;
-}
-.hero-carousel .hero-carousel-imagen {
-  width: 100%;
-  height: auto;
-}
-
-.section-popular {
-  padding: 1rem;
-}
-.section-popular .section-popular-title {
-  font-family: "Dela Gothic One";
-  padding: 1rem;
-  color: #ffffff;
-}
-.section-popular .section-popular-cards {
-  place-items: center center;
-}
-.section-popular .section-popular-cards .cardx {
-  background-color: #111111;
-  transition: transform 0.3s;
-  width: 70%;
-}
-.section-popular .section-popular-cards .cardx:hover {
-  z-index: 0;
-  transform: scale(1.05);
-}
-.section-popular .section-popular-cards .cardx .card-img {
-  width: 100%;
-  height: auto;
-}
-.section-popular .section-popular-cards .cardx .card-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-items: center;
-  padding: 1.5rem;
-}
-.section-popular .section-popular-cards .cardx .card-title p {
-  font-family: monospace;
-  font-weight: bold;
-  margin: 0;
-  color: #ffffff;
-}
-
-.formulario-signIn .title-signIn, .formulario-signIn .title-logIn, .formulario-logIn .title-signIn, .formulario-logIn .title-logIn {
-  color: #E67300;
-}
-.formulario-signIn label, .formulario-logIn label {
-  color: #ffffff;
-}
-.formulario-signIn .btn-sigIn, .formulario-signIn .btn-logIn, .formulario-logIn .btn-sigIn, .formulario-logIn .btn-logIn {
-  background-color: #FF8400;
-  color: #ffffff;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-.formulario-signIn .btn-sigIn:hover, .formulario-signIn .btn-logIn:hover, .formulario-logIn .btn-sigIn:hover, .formulario-logIn .btn-logIn:hover {
-  background-color: #E67300;
-  color: #ffffff;
-  transform: scale(1.2);
-}
-
-.cards-columna-izquierda .card {
-  border: none;
-  background-color: #111111;
-}
-.cards-columna-izquierda .card .card-body h5, .cards-columna-izquierda .card .card-body p {
-  color: #ffffff;
-}
-.cards-columna-izquierda .card .card-footer {
-  background-color: #ffffff;
-}
-.cards-columna-izquierda .card .card-footer p {
-  color: #111111;
-  font-weight: bold;
-}
-
-.cards-columna-medio .card {
-  border: none;
-  background-color: #111111;
-}
-.cards-columna-medio .card .card-body h5, .cards-columna-medio .card .card-body p {
-  color: #ffffff;
-}
-.cards-columna-medio .card .card-footer {
-  background-color: #ffffff;
-}
-.cards-columna-medio .card .card-footer p {
-  color: #111111;
-  font-weight: bold;
-}
-
-.cards-columna-derecha .card {
-  border: none;
-  background-color: #111111;
-}
-.cards-columna-derecha .card .card-body h5, .cards-columna-derecha .card .card-body p {
-  color: #ffffff;
-}
-.cards-columna-derecha .card .card-footer {
-  background-color: #ffffff;
-}
-.cards-columna-derecha .card .card-footer p {
-  color: #111111;
-  font-weight: bold;
-}
-
-.main-info-banner {
-  display: flex;
-  justify-content: center;
-  margin: 5rem 0 5rem 0;
-  padding: 1rem;
-}
-
-.container-productos .container-productos-h1 {
-  text-align: center;
-  padding: 1rem;
-}
-.container-productos .container-productos-h1 h1 {
-  color: #ffffff;
-}
-.container-productos .container-productos-buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 0 0 2rem 0;
-}
-.container-productos .container-productos-buttons .productos-buttons {
-  padding: 1rem;
-  color: #ffffff;
-  background-color: #FF8400;
-  transition: all 0.5s ease-in-out;
-  border: 1px solid #E67300;
-  font-weight: 600;
-}
-.container-productos .container-productos-buttons .productos-buttons:hover {
-  background-color: #ffffff;
-  color: #E67300;
-  border: 1px solid #E67300;
-  transform: scale(1.1);
-}
-.container-productos .container-productos-buttons .productos-buttons.visible {
-  background-color: #ffffff;
-  color: #E67300;
-  border: 1px solid #E67300;
-}
-.container-productos .contenedor-productosx {
-  margin: 1rem;
-}
-.container-productos .contenedor-productosx .producto-funkoPop, .container-productos .contenedor-productosx .producto-juegos, .container-productos .contenedor-productosx .producto-accesorios {
-  display: none;
-}
-.container-productos .contenedor-productosx .producto .card-producto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  outline: 1px solid #E67300;
-  width: 80%;
-  background-color: #2e2e2e;
-}
-.container-productos .contenedor-productosx .producto .card-producto .card-producto-header {
-  display: flex;
-  justify-content: center;
-}
-.container-productos .contenedor-productosx .producto .card-producto .card-producto-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 0 1rem 0;
-  gap: 1rem;
-}
-.container-productos .contenedor-productosx .producto .card-producto .card-producto-body .card-body-span-descripcion {
-  text-align: center;
-  color: #ffffff;
-  font-weight: bold;
-}
-.container-productos .contenedor-productosx .producto .card-producto .card-producto-body .card-body-span-precio {
-  text-align: center;
-  color: #E67300;
-  font-weight: bold;
-}
-.container-productos .contenedor-productosx .producto .card-producto .card-producto-footer {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0 1rem 0;
-  background-color: #1c1c1c;
-  width: 100%;
-}
-.container-productos .contenedor-productosx .producto .card-producto .card-producto-footer .card-footer-button {
-  padding: 0.5rem;
-  background-color: #FF8400;
-  color: #ffffff;
-  transition: background-color 0.8s ease-in-out;
-  border: 1px solid #E67300;
-}
-.container-productos .contenedor-productosx .producto .card-producto .card-producto-footer .card-footer-button:hover {
-  background-color: #ffffff;
-  color: #E67300;
-}
-
-.main-footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #111111;
-}
-.main-footer .container-footer .container-footer-links {
-  gap: 1.2rem;
-}
-.main-footer .container-footer .container-footer-links a {
-  text-decoration: none;
-  color: #ffffff;
-  transition: all 1s ease;
-}
-.main-footer .container-footer .container-footer-links a:hover {
-  color: #E67300;
-  cursor: pointer;
-  transform: scale(1.2);
-}
-.main-footer .container-footer .container-footer-name p {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 1rem;
-  margin: 0;
-  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
