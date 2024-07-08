@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crunchyroll - Nosotros</title>
+    <meta name="description" content="Descubre quiénes somos en la página 'Nosotros' de Ronaldo Farfán. Conoce nuestra pasión por el anime, el desarrollo web y más. Acompáñanos en nuestra aventura y conoce a nuestro equipo.">
+    <meta name="keywords" content="Ronaldo Farfán, anime, desarrollo web, nosotros, equipo, pasión por el anime, página web, tecnología">
+    <meta name="author" content="Ronaldo Farfan Ayma">
     <!-- ICONO -->
     <link rel="icon" type="image/png" href="https://www.crunchyroll.com/build/assets/img/favicons/favicon-16x16.png">
     <!-- FIN ICONO -->
@@ -18,9 +21,11 @@
 </head> 
 <body>
     <div class="containerx">
+        <!-- HEADER -->
         <header class="main-header">
             <a href="./../index.html"><img class="img-icon" src="../assets/img/crunchyrollIcon.png" alt="logo"></a> 
             <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <!-- NAV -->
             <nav id="main-nav" class="main-nav">
                 <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
                 <ul class="nav-list">
@@ -31,16 +36,35 @@
                     <li><a href="login.html">LOGIN</a></li> 
                 </ul>
             </nav> 
+            <!--FIN NAV-->
         </header>
-        <main>
-            <section>
-                <article>
-                    <div>
-                        
-                    </div>
-                </article>
-            </section>
+        <!--FIN HEADER-->
+        <main class="container mt-5">
+            <div class="row mb-5">
+                <h1 class="h1 text-light text-center">¿QUIEN SOY?</h1>
+            </div>
+
+            <div class="row px-5">
+                <div class="nosotrosContenedorImage col-sm-12 col-md-12 col-lg-3 d-flex align-items-center">
+                    <img class="ronaldoImage rounded img-fluid" src="./../assets/img/nosotrosImage.jpeg" alt="nosotrosImage">
+                </div>
+                <div class="nosotrosContenedorInfo col-sm-12 col-md-12 col-lg-9 text-light">
+                    <h2>Sobre mí</h2>
+                    <p>¡Hola! Soy Ronaldo Farfan Ayma, un apasionado del anime y los videojuegos. Llevo alrededor de cuatro años explorando el vasto y emocionante mundo del anime, 
+                    pero mi amor por esta forma de entretenimiento comenzó desde niño con clásicos como Pokémon,Dragon Ball,Digimon,etc. Soy un gran fan del género shonen. 
+                    Me encanta la acción, el drama y la evolución de los personajes que estos animes ofrecen. Uno de mis favoritos es Naruto Shippuden, 
+                    una serie que me ha enseñado mucho sobre la perseverancia, el valor de la amistad y el espíritu de lucha.</p>
+                    <h2>Mis Pasatiempos</h2>
+                    <p>Cuando no estoy viendo anime, me gusta dedicar mi tiempo a jugar videojuegos. Es una forma increíble de desconectar y sumergirme en mundos fantásticos. 
+                    Además, disfruto mucho salir con mi novia y pasar tiempo de calidad con mis tres adorables perritos: Fox, Dulce y Luna. ¡Ellos siempre logran ponerme una sonrisa en la cara!
+                    Dormir es otra de mis grandes aficiones. No hay nada como un buen descanso después de una maratón de anime o una intensa sesión de juegos.</p>
+                    <h2>Mi Proyecto</h2>
+                    <p>Actualmente, estoy trabajando en mi propia página web como parte de un curso de desarrollo web en coderhouse. He decidido diseñar este sitio inspirado en la estructura y el estilo de Crunchyroll,
+                    buscando crear un espacio acogedor y funcional para compartir mi pasión por el anime y los videojuegos.</p>
+                </div>
+            </div>
         </main>
+        <!-- FOOTER -->
         <footer class="main-footer">
             <div class="container-footer">
                 <div class="container-footer-links">
@@ -64,6 +88,7 @@
                 </div>
             </div>
         </footer>
+        <!-- FIN FOOTER-->
     </div>
 <!-- JS BOOTSTRAP -->  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
