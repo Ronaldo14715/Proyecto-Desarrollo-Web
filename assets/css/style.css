@@ -226,9 +226,6 @@ body {
 .container-productos .contenedor-productosx {
   margin: 1rem;
 }
-.container-productos .contenedor-productosx .producto-funkoPop, .container-productos .contenedor-productosx .producto-juegos, .container-productos .contenedor-productosx .producto-accesorios {
-  display: none;
-}
 .container-productos .contenedor-productosx .producto .card-producto {
   display: flex;
   flex-direction: column;
