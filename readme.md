@@ -21,3 +21,13 @@ La página web incluye varias secciones clave:
    ```bash
     git clone https://github.com/Ronaldo14715/Proyecto-Desarrollo-Web.git
 
+## Tecnologías Utilizadas
+
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Sass**
+- **Bootstrap**
+
+## Autor
+Ronaldo Farfán
