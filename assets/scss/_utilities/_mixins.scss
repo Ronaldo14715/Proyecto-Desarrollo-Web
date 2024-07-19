@@ -10,7 +10,7 @@
 
     }
 
-    @if $breakpoint == sm {
+    @else if $breakpoint == sm {
         
         @media (min-width: $minSmMobile) and (max-width: $maxSmMobile){
             @content;
