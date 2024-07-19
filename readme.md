@@ -10,5 +10,9 @@ Venta: Un espacio donde los usuarios pueden adquirir productos relacionados con 
 Nosotros: Información sobre el equipo detrás de la plataforma.
 Login: Una página de inicio de sesión para que los usuarios puedan acceder a sus cuentas personalizadas.
 
-![<texto-alt>](<./assets/img/portada.jpg>)
-<img alt="<texto-alt>" src="./assets/img/portada.jpg">
+![<Imagen-Portada>](<./assets/img/portada.jpg>)
+
+## Instalación
+
+ ```bash
+   git clone https://github.com/Ronaldo14715/Proyecto-Desarrollo-Web.git
